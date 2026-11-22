@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Pouch Project</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Design a zipper pouch with sliders, then get the cut list, supplies and step-by-step sewing instructions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Karla:ital,wght@0,400..700;1,400&family=Courier+Prime:wght@400;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg class="pw-defs" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- Fabric prints, after the moodboard: 70s daisy floral, calico, faded plaid, gingham, corduroy -->
+    <pattern id="pat-daisy" width="44" height="44" patternUnits="userSpaceOnUse">
+      <rect class="fq-olive" width="44" height="44"/>
+      <ellipse class="fq-cactus" cx="31" cy="12" rx="5" ry="2" transform="rotate(-35 31 12)"/>
+      <ellipse class="fq-cactus" cx="9" cy="34" rx="5" ry="2" transform="rotate(30 9 34)"/>
+      <g class="fq-cream" transform="translate(13 13)">
+        <ellipse cx="0" cy="-6.4" rx="2.7" ry="4.6"/>
+        <ellipse cx="0" cy="-6.4" rx="2.7" ry="4.6" transform="rotate(45)"/>
+        <ellipse cx="0" cy="-6.4" rx="2.7" ry="4.6" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-6.4" rx="2.7" ry="4.6" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-6.4" rx="2.7" ry="4.6" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-6.4" rx="2.7" ry="4.6" transform="rotate(225)"/>
+        <ellipse cx="0" cy="-6.4" rx="2.7" ry="4.6" transform="rotate(270)"/>
+        <ellipse cx="0" cy="-6.4" rx="2.7" ry="4.6" transform="rotate(315)"/>
+      </g>
+      <circle class="fq-butter" cx="13" cy="13" r="3.4"/>
+      <circle class="fq-mahog" cx="13" cy="13" r="1.4"/>
+      <g class="fq-butter-lt" transform="translate(33 33) scale(0.68)">
+        <ellipse cx="0" cy="-6.4" rx="2.7" ry="4.6"/>
+        <ellipse cx="0" cy="-6.4" rx="2.7" ry="4.6" transform="rotate(60)"/>
+        <ellipse cx="0" cy="-6.4" rx="2.7" ry="4.6" transform="rotate(120)"/>
+        <ellipse cx="0" cy="-6.4" rx="2.7" ry="4.6" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-6.4" rx="2.7" ry="4.6" transform="rotate(240)"/>
+        <ellipse cx="0" cy="-6.4" rx="2.7" ry="4.6" transform="rotate(300)"/>
+      </g>
+      <circle class="fq-mahog" cx="33" cy="33" r="1.8"/>
+      <g class="fq-cream"><circle cx="38" cy="5" r="1"/><circle cx="24" cy="40" r="1"/><circle cx="3.5" cy="24" r="1"/><circle cx="25" cy="24" r="0.7"/></g>
+    </pattern>
+    <pattern id="pat-calico" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect class="fq-cream" width="16" height="16"/>
+      <ellipse class="fq-leaf" cx="7.8" cy="6.8" rx="1.7" ry="0.7" transform="rotate(40 7.8 6.8)"/>
+      <ellipse class="fq-leaf" cx="11" cy="14.6" rx="1.5" ry="0.6" transform="rotate(-30 11 14.6)"/>
+      <circle class="fq-rose" cx="5" cy="5" r="2.1"/>
+      <circle class="fq-rose-deep" cx="5" cy="5" r="0.9"/>
+      <circle class="fq-thistle" cx="13" cy="12.5" r="1.7"/>
+      <circle class="fq-blue" cx="13.5" cy="3" r="0.8"/>
+      <circle class="fq-blue" cx="2.5" cy="12.5" r="0.8"/>
+    </pattern>
+    <pattern id="pat-plaid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <rect class="fq-cream" width="24" height="24"/>
+      <rect class="fq-blue" width="10" height="24" opacity=".7"/>
+      <rect class="fq-blue" width="24" height="10" opacity=".7"/>
+      <rect class="fq-leaf" x="4.4" width="1.2" height="24" opacity=".6"/>
+      <rect class="fq-leaf" y="4.4" width="24" height="1.2" opacity=".6"/>
+      <rect class="fq-mahog" x="15" width="1.4" height="24" opacity=".75"/>
+      <rect class="fq-mahog" y="15" width="24" height="1.4" opacity=".75"/>
+    </pattern>
+    <pattern id="pat-gingham" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect class="fq-butter-lt" width="12" height="12"/>
+      <rect class="fq-butter" width="6" height="12" opacity=".6"/>
+      <rect class="fq-butter" width="12" height="6" opacity=".6"/>
+    </pattern>
+    <pattern id="pat-cord" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect class="fq-mahog" width="6" height="6"/>
+      <rect class="fq-mahog-dk" width="1.8" height="6"/>
+      <rect class="fq-mahog-lt" x="3.2" width="1" height="6" opacity=".55"/>
+    </pattern>
+    <pattern id="pat-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect class="f-inter" width="6" height="6"/>
+      <line class="f-hatch" x1="0" y1="0" x2="0" y2="6"/>
+    </pattern>
+    <linearGradient id="g-puff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" class="stop-hi"/>
+      <stop offset="0.45" class="stop-clear"/>
+      <stop offset="1" class="stop-lo"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#design">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <rect class="bm-tape" x="2" y="12" width="28" height="8" rx="2"/>
+        <line class="bm-teeth" x1="4" y1="16" x2="28" y2="16"/>
+        <rect class="bm-slider" x="17" y="10" width="7" height="12" rx="2.5"/>
+        <rect class="bm-pull" x="18.5" y="19" width="4" height="10" rx="2"/>
+      </svg>
+      <span>The Pouch <em>Project</em></span>
+    </a>
+    <nav class="stepnav" aria-label="Sections">
+      <a href="#design"><span class="stepnav-n">1</span>Design</a>
+      <a href="#cut"><span class="stepnav-n">2</span>Cut</a>
+      <a href="#gather"><span class="stepnav-n">3</span>Gather</a>
+      <a href="#sew"><span class="stepnav-n">4</span>Sew</a>
+    </nav>
+    <div class="seg seg-units" role="group" aria-label="Units">
+      <button type="button" id="units-in" data-units="in">in</button>
+      <button type="button" id="units-cm" data-units="cm">cm</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="design" class="band band-design">
+    <div class="wrap">
+      <div class="intro">
+        <h1>Zipper pouch patterns</h1>
+        <p class="intro-lede">Any size you like.</p>
+      </div>
+
+      <div class="shapes" id="shapePicker" role="radiogroup" aria-label="Pouch shape"></div>
+
+      <div class="design-grid">
+        <div class="controls">
+          <section class="panel" aria-labelledby="size-h">
+            <h2 class="panel-title" id="size-h">Size <span class="panel-sub">finished measurements</span></h2>
+            <div id="sizeControls" class="fields"></div>
+          </section>
+
+          <section class="panel" aria-labelledby="zip-h">
+            <h2 class="panel-title" id="zip-h">Zipper <span class="panel-sub">pick a length to size the pouch to it</span></h2>
+            <div class="fields">
+              <div class="field">
+                <div class="field-top">
+                  <span class="field-label" id="zipLen-l">Length</span>
+                  <button type="button" class="linkish" id="zipReset" hidden>Use best fit</button>
+                </div>
+                <div class="chips" id="zipLens" role="group" aria-labelledby="zipLen-l"></div>
+                <p class="field-note" id="zipNote" aria-live="polite"></p>
+              </div>
+              <div class="field-pair">
+                <div class="field">
+                  <span class="field-label" id="gauge-l">Size</span>
+                  <div class="seg" id="gaugeSeg" role="group" aria-labelledby="gauge-l"></div>
+                </div>
+                <div class="field">
+                  <span class="field-label" id="kind-l">Teeth</span>
+                  <div class="seg" id="kindSeg" role="group" aria-labelledby="kind-l">
+                    <button type="button" id="kind-coil" data-kind="coil">Nylon coil</button>
+                    <button type="button" id="kind-metal" data-kind="metal">Metal</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel" aria-labelledby="finish-h">
+            <h2 class="panel-title" id="finish-h">Finish</h2>
+            <div class="fields">
+              <div class="field">
+                <span class="field-label" id="struct-l">Structure</span>
+                <div class="structs" id="structSeg" role="group" aria-labelledby="struct-l"></div>
+              </div>
+              <div class="field-pair">
+                <div class="field">
+                  <span class="field-label" id="sa-l">Seam allowance</span>
+                  <div class="seg" id="saSeg" role="group" aria-labelledby="sa-l"></div>
+                </div>
+                <div class="field">
+                  <span class="field-label">Extras</span>
+                  <label class="toggle" for="pocketToggle">
+                    <input type="checkbox" id="pocketToggle">
+                    <span class="toggle-track" aria-hidden="true"></span>
+                    <span>Inside slip pocket</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <aside class="preview" aria-label="Preview">
+          <div class="preview-head">
+            <p class="preview-title">Your pouch <span>drawn to scale</span></p>
+            <div class="swatches" id="swatches" role="group" aria-label="Preview fabric"></div>
+          </div>
+          <svg id="preview" class="preview-svg" viewBox="0 0 560 400" role="img" aria-label="Preview of your pouch"></svg>
+          <dl class="summary" id="summary"></dl>
+          <ul class="notes" id="notes"></ul>
+          <a class="cta" href="#cut">See the pattern <span aria-hidden="true">↓</span></a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="cut" class="band">
+    <div class="wrap">
+      <header class="band-head band-head-row">
+        <div>
+          <p class="band-step"><span>2</span>Cut</p>
+          <h2>Cut list</h2>
+          <p class="band-lede">Every piece is a rectangle, so you can cut with a ruler. No printing. Each one is drawn to scale on a <span id="gridLabel">1″</span> grid, and the sizes already include seam allowance.</p>
+          <ul class="legend" aria-label="Line key">
+            <li><svg viewBox="0 0 36 10" aria-hidden="true"><line class="pc-cut" x1="1" y1="5" x2="35" y2="5"/></svg>cut line</li>
+            <li><svg viewBox="0 0 36 10" aria-hidden="true"><line class="pc-seam" x1="1" y1="5" x2="35" y2="5"/></svg>stitch line</li>
+            <li><svg viewBox="0 0 36 10" aria-hidden="true"><line class="pc-fold" x1="1" y1="5" x2="35" y2="5"/></svg>fold line</li>
+            <li><svg viewBox="0 0 36 10" aria-hidden="true"><rect class="pc-away" x="10" y="0.5" width="16" height="9"/></svg>cut-away square (size on the left)</li>
+          </ul>
+        </div>
+        <p class="tally" id="cutProgress" aria-live="polite"></p>
+      </header>
+      <div id="pieces" class="pieces"></div>
+    </div>
+  </section>
+
+  <section id="gather" class="band">
+    <div class="wrap">
+      <header class="band-head">
+        <p class="band-step"><span>3</span>Gather</p>
+        <h2>Supplies</h2>
+        <p class="band-lede">Tick things off as you find them in your stash.</p>
+      </header>
+      <div id="materials" class="materials"></div>
+    </div>
+  </section>
+
+  <section id="sew" class="band">
+    <div class="wrap">
+      <header class="band-head band-head-row">
+        <div>
+          <p class="band-step"><span>4</span>Sew</p>
+          <h2>Sew it together</h2>
+          <p class="band-lede">Check off each step as you go. Your progress is saved in this browser.</p>
+        </div>
+        <div class="progress">
+          <p id="progressText" class="tally">0 steps done</p>
+          <div class="progress-bar" aria-hidden="true"><span id="progressBar"></span></div>
+          <button type="button" class="linkish" id="resetSteps">Clear checkmarks</button>
+        </div>
+      </header>
+      <ol id="steps" class="steps"></ol>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>The Pouch Project. Measure twice, cut once, and always open the zipper before sewing the sides.</p>
+  </div>
+</footer>
+
+<script src="pouches.js"></script>
+<script src="draw.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

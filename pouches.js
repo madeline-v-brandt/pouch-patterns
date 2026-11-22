@@ -30,7 +30,7 @@
       level: 'Beginner', time: 'About 45 min',
       boxed: false, boxyTop: false, handles: false, structure: 'soft',
       dims: [
-        { key: 'w', label: 'Width',  hint: 'side to side',     min: 4, max: 14, def: 8 },
+        { key: 'w', label: 'Width',  hint: 'side to side',     min: 3, max: 14, def: 8 },
         { key: 'h', label: 'Height', hint: 'bottom to zipper', min: 3, max: 10, def: 5 },
       ],
     },
@@ -40,7 +40,7 @@
       level: 'Confident beginner', time: 'About 1¼ hr',
       boxed: true, boxyTop: false, handles: false, structure: 'medium',
       dims: [
-        { key: 'w', label: 'Width',  hint: 'across the base', min: 5,   max: 12, def: 8 },
+        { key: 'w', label: 'Width',  hint: 'across the base', min: 3,   max: 12, def: 8 },
         { key: 'h', label: 'Height', hint: 'base to zipper',  min: 3,   max: 9,  def: 5 },
         { key: 'd', label: 'Depth',  hint: 'front to back',   min: 1.5, max: 6,  def: 3 },
       ],
@@ -51,7 +51,7 @@
       level: 'Confident beginner', time: 'About 1½ hr',
       boxed: true, boxyTop: true, handles: false, structure: 'medium',
       dims: [
-        { key: 'w', label: 'Width',  hint: 'across the base', min: 5,   max: 12, def: 8 },
+        { key: 'w', label: 'Width',  hint: 'across the base', min: 3.5, max: 12, def: 8 },
         { key: 'h', label: 'Height', hint: 'base to top',     min: 3,   max: 8,  def: 4.5 },
         { key: 'd', label: 'Depth',  hint: 'front to back',   min: 2.5, max: 6,  def: 4 },
       ],
@@ -62,7 +62,7 @@
       level: 'Intermediate', time: '2 to 3 hr',
       boxed: true, boxyTop: false, handles: true, structure: 'medium',
       dims: [
-        { key: 'w',    label: 'Width',       hint: 'across the base',      min: 10, max: 20, def: 15 },
+        { key: 'w',    label: 'Width',       hint: 'across the base',      min: 8,  max: 20, def: 15 },
         { key: 'h',    label: 'Height',      hint: 'base to zipper',       min: 8,  max: 16, def: 12 },
         { key: 'd',    label: 'Depth',       hint: 'front to back',        min: 3,  max: 8,  def: 5 },
         { key: 'drop', label: 'Handle drop', hint: 'zipper to handle top', min: 5,  max: 12, def: 8 },

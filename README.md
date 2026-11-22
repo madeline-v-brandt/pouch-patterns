@@ -2,6 +2,8 @@
 
 Zipper pouch patterns, any size you like.
 
+**Use it here: https://madeline-v-brandt.github.io/pouch-patterns/**
+
 Pick a pouch shape, set the size with sliders and choose a zipper. The site works out every piece to cut (drawn to scale), the fabric and notions to buy, and step-by-step sewing instructions with your measurements filled in.
 
 **Shapes:** flat zip pouch, boxed makeup bag, boxy pouch, zip-top tote.
